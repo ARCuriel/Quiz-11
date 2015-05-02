@@ -1,0 +1,39 @@
+# Aram Rodrigo Curiel Graxiola
+# A01229982
+# Quiz 11 - Question 1
+
+
+import math
+
+def readNums(file):
+    F = open(file,"r")
+    total = 0
+    num = 0
+    va = 0
+    sd = 0
+    LIST = []
+
+    for line in F:
+        value = int(line)
+        LIST.append(value)
+        total = total + value
+        num = num + 1
+
+    average = total/num
+
+    for item in LIST:
+        va = (va + (item - average)**2)/num
+
+
+    sd = math.sqrt(va)
+
+
+    F.close
+    print("The total values is:",total)
+    print("The number of lines is:",num)
+    print("The average of your values is:",average)
+    print("The standard deviation of your values is:",sd)
+
+file = "F:/Quiz11/random_numbers.txt"
+print()
+readNums(file)
