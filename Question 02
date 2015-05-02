@@ -1,0 +1,16 @@
+# Aram Rodrigo Curiel Graxiola
+# A01229982
+# Quiz 11 - Question 2
+
+def check_banana(a):
+    f = open(a,'r')
+    n = 0
+    for i in f:
+        r = i.lower()
+        sub = r.find('banana')
+        while sub ! = (-1):
+            n = n+1
+            sub = r.find('banana',(sub+1))
+    return(n)
+
+check_banana("C:/Users/usuario/Desktop/banana.txt")
