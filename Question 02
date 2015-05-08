@@ -8,7 +8,7 @@ def check_banana(a):
     for i in f:
         r = i.lower()
         sub = r.find('banana')
-        while sub ! = (-1):
+        while sub != (-1):
             n = n+1
             sub = r.find('banana',(sub+1))
     return(n)
